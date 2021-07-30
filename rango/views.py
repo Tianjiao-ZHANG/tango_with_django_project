@@ -92,6 +92,7 @@ def add_page(request, category_name_slug):
     return render(request, 'rango/add_page.html', context=context_dict)
 
 def register(request):
+    
     registered = False
     if request.method == 'POST':
         user_form = UserForm(request.POST)
